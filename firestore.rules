@@ -1,0 +1,140 @@
+/**
+ * Core Philosophy: This ruleset governs a public-facing website for a scuba diving center.
+ * The primary security model is public-read for informational content (like courses,
+ * tours, and instructors) and a strict, private ownership model for user-specific
+ * data (bookings).
+ *
+ * Data Structure: The data is organized into flat, top-level collections for each
+ * major entity: /courses, /tours, /instructors, /gallery_images, and /bookings.
+ * There are no user-specific subcollections, simplifying data access paths.
+ *
+ * Key Security Decisions:
+ * - Public Content: All informational collections are publicly readable by anyone,
+ *   including unauthenticated users, to support the website's public-facing nature.
+ *   However, all client-side writes to this content are disabled to prevent vandalism.
+ *   Content management is assumed to be handled by a trusted backend service or admin panel.
+ * - Private Bookings: The /bookings collection is writeable by authenticated users but is
+ *   highly restricted. Users can only create, view, update, or delete their own bookings.
+ * - No User Listing: Listing all documents in the /bookings collection is explicitly
+ *   disallowed to protect user privacy and prevent data leaks. Clients must query for
+ *   their own bookings using the creatorId field.
+ *
+ * Denormalization for Authorization: To secure bookings effectively, a `creatorId`
+ * field (containing the user's auth UID) MUST be denormalized onto every /bookings
+ * document. This allows for simple, performant ownership checks without needing costly
+ * `get` calls or complex lookups. Rules for creating and updating bookings enforce the
+ * presence and immutability of this `creatorId`.
+ *
+ * Structural Segregation: Each collection holds a distinct type of data with a
+ * uniform security profile. Public-read data is separate from private user data,
+ * which simplifies the rules and enhances security for list operations.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ------------------------------------------------------------------------
+    // Helper Functions
+    // ------------------------------------------------------------------------
+
+    /**
+     * Returns true if the user is authenticated.
+     */
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    /**
+     * Returns true if the request UID matches the provided userId.
+     * Use for checking document ownership on read and create.
+     */
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    /**
+     * Returns true if the user is the owner of an existing document.
+     * Use for checking ownership on update and delete operations to prevent
+     * acting on non-existent documents.
+     */
+    function isExistingOwner(userId) {
+      return isOwner(userId) && resource != null;
+    }
+
+    // ------------------------------------------------------------------------
+    // Collection Rules
+    // ------------------------------------------------------------------------
+
+    /**
+     * @description Publicly readable course information. All writes from clients are disallowed.
+     * @path /courses/{courseId}
+     * @allow (get) Any user, signed in or not, can read a specific course.
+     * @deny (create) No user can create a course from the client.
+     * @principle Public read for informational content; writes disabled for security.
+     */
+    match /courses/{courseId} {
+      allow get, list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Publicly readable tour information. All writes from clients are disallowed.
+     * @path /tours/{tourId}
+     * @allow (get) Any user, signed in or not, can read a specific tour.
+     * @deny (create) No user can create a tour from the client.
+     * @principle Public read for informational content; writes disabled for security.
+     */
+    match /tours/{tourId} {
+      allow get, list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Publicly readable instructor profiles. All writes from clients are disallowed.
+     * @path /instructors/{instructorId}
+     * @allow (get) Any user, signed in or not, can read a specific instructor profile.
+     * @deny (create) No user can create an instructor from the client.
+     * @principle Public read for informational content; writes disabled for security.
+     */
+    match /instructors/{instructorId} {
+      allow get, list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description User bookings. Users can manage their own bookings but cannot see others'.
+     * @path /bookings/{bookingId}
+     * @allow (create) A signed-in user (auth.uid: 'user123') creates a booking with `{ creatorId: 'user123' }`.
+     * @deny (list) No user can list all bookings in the collection to protect privacy.
+     * @deny (get) A signed-in user ('user456') tries to read a booking owned by 'user123'.
+     * @principle Enforces strict document ownership and prevents data leakage via list operations.
+     */
+    match /bookings/{bookingId} {
+      allow get: if isOwner(resource.data.creatorId);
+      allow list: if false;
+      allow create: if isSignedIn() && isOwner(request.resource.data.creatorId);
+      allow update: if isExistingOwner(resource.data.creatorId) && request.resource.data.creatorId == resource.data.creatorId;
+      allow delete: if isExistingOwner(resource.data.creatorId);
+    }
+
+    /**
+     * @description Publicly readable gallery images. All writes from clients are disallowed.
+     * @path /gallery_images/{galleryImageId}
+     * @allow (list) Any user, signed in or not, can list all gallery images.
+     * @deny (create) No user can upload a gallery image from the client.
+     * @principle Public read for informational content; writes disabled for security.
+     */
+    match /gallery_images/{galleryImageId} {
+      allow get, list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}

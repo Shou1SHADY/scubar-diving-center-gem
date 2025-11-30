@@ -1,0 +1,284 @@
+{
+  "entities": {
+    "Course": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Course",
+      "type": "object",
+      "description": "Represents a scuba diving course offered by the diving center.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Course entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the course."
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the course content."
+        },
+        "price": {
+          "type": "number",
+          "description": "The price of the course."
+        },
+        "duration": {
+          "type": "string",
+          "description": "The duration of the course (e.g., '3 days')."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL of the image representing the course.",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "price",
+        "duration",
+        "imageUrl"
+      ]
+    },
+    "Tour": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Tour",
+      "type": "object",
+      "description": "Represents a guided scuba diving tour.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Tour entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the tour."
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the tour."
+        },
+        "price": {
+          "type": "number",
+          "description": "The price of the tour."
+        },
+        "duration": {
+          "type": "string",
+          "description": "The duration of the tour (e.g., '2 hours')."
+        },
+        "location": {
+          "type": "string",
+          "description": "The location where the tour takes place."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL of the image representing the tour.",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "price",
+        "duration",
+        "location",
+        "imageUrl"
+      ]
+    },
+    "Instructor": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Instructor",
+      "type": "object",
+      "description": "Represents a scuba diving instructor.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Instructor entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the instructor."
+        },
+        "bio": {
+          "type": "string",
+          "description": "A short biography of the instructor."
+        },
+        "photoUrl": {
+          "type": "string",
+          "description": "URL of the instructor's photo.",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "bio",
+        "photoUrl"
+      ]
+    },
+    "Booking": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Booking",
+      "type": "object",
+      "description": "Represents a booking made by a customer for a course or tour.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Booking entity."
+        },
+        "courseId": {
+          "type": "string",
+          "description": "Reference to Course. (Relationship: Course 1:N Booking)"
+        },
+        "tourId": {
+          "type": "string",
+          "description": "Reference to Tour. (Relationship: Tour 1:N Booking)"
+        },
+        "customerName": {
+          "type": "string",
+          "description": "The name of the customer making the booking."
+        },
+        "customerEmail": {
+          "type": "string",
+          "description": "The email address of the customer.",
+          "format": "email"
+        },
+        "bookingDate": {
+          "type": "string",
+          "description": "The date and time of the booking.",
+          "format": "date-time"
+        },
+        "numberOfParticipants": {
+          "type": "number",
+          "description": "The number of participants in the booking."
+        }
+      },
+      "required": [
+        "id",
+        "customerName",
+        "customerEmail",
+        "bookingDate",
+        "numberOfParticipants"
+      ]
+    },
+    "GalleryImage": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "GalleryImage",
+      "type": "object",
+      "description": "Represents an image in the diving center's gallery.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the GalleryImage entity."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL of the gallery image.",
+          "format": "uri"
+        },
+        "description": {
+          "type": "string",
+          "description": "A description of the image."
+        }
+      },
+      "required": [
+        "id",
+        "imageUrl",
+        "description"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/courses/{courseId}",
+        "definition": {
+          "entityName": "Course",
+          "schema": {
+            "$ref": "#/backend/entities/Course"
+          },
+          "description": "Stores information about scuba diving courses. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
+          "params": [
+            {
+              "name": "courseId",
+              "description": "Unique identifier for the course."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/tours/{tourId}",
+        "definition": {
+          "entityName": "Tour",
+          "schema": {
+            "$ref": "#/backend/entities/Tour"
+          },
+          "description": "Stores information about guided scuba diving tours. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
+          "params": [
+            {
+              "name": "tourId",
+              "description": "Unique identifier for the tour."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/instructors/{instructorId}",
+        "definition": {
+          "entityName": "Instructor",
+          "schema": {
+            "$ref": "#/backend/entities/Instructor"
+          },
+          "description": "Stores information about scuba diving instructors. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
+          "params": [
+            {
+              "name": "instructorId",
+              "description": "Unique identifier for the instructor."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/bookings/{bookingId}",
+        "definition": {
+          "entityName": "Booking",
+          "schema": {
+            "$ref": "#/backend/entities/Booking"
+          },
+          "description": "Stores booking information for courses and tours.",
+          "params": [
+            {
+              "name": "bookingId",
+              "description": "Unique identifier for the booking."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/gallery_images/{galleryImageId}",
+        "definition": {
+          "entityName": "GalleryImage",
+          "schema": {
+            "$ref": "#/backend/entities/GalleryImage"
+          },
+          "description": "Stores images for the diving center's gallery. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
+          "params": [
+            {
+              "name": "galleryImageId",
+              "description": "Unique identifier for the gallery image."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore structure is designed to manage data for a scuba diving center website, focusing on courses, tours, instructors, bookings, and gallery images. The design prioritizes security, scalability, and ease of debugging by adhering to the principles of Authorization Independence, Clarity of Intent, DBAC (Database-Based Access Control), and QAPs (Rules are not Filters). Authorization independence is achieved via strategy A, Structural Segregation via strategy B and consistent Access Modelling via strategy C.\n\n**Authorization Independence:**\n\n*   There is no hierarchical authorization with `get()` calls.\n*   All authorization depends on `request.auth.uid`.\n\n**Structural Segregation:**\n\n*   Each collection is dedicated to a specific entity type with homogeneous security needs, enhancing rule simplicity and maintainability.\n\n**Access Modeling:**\n\n*   The structure employs path-based ownership. For example, bookings are not created at the user level so aren't included in `/users/{userId}/bookings/{bookingId}` because the app does not require users to access other user's bookings.\n\n**QAPs (Rules are not Filters):**\n\n*   List operations are secured through the segregated structure, ensuring that rules can be applied efficiently without acting as filters.\n"
+  }
+}
