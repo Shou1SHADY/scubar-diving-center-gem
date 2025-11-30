@@ -1,14 +1,79 @@
+export type NavItem = {
+  label: string;
+  href: string;
+  children?: NavItem[];
+  description?: string;
+  icon?: React.ComponentType<{ className?: string }>;
+};
+
 export const siteConfig = {
   name: "Neptune Dive",
   description: "Explore the vibrant world beneath the waves with Neptune Dive, your premier scuba diving center.",
   navLinks: [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/courses", label: "Courses" },
+    { href: "/about", label: "About" },
+    {
+      href: "/courses",
+      label: "Courses",
+      children: [
+        {
+          href: "/courses",
+          label: "All Courses",
+          description: "Browse all our diving courses.",
+        },
+        {
+          href: "/courses/open-water",
+          label: "Open Water",
+          description: "Start your scuba journey here.",
+        },
+        {
+          href: "/courses/advanced",
+          label: "Advanced Open Water",
+          description: "Take your skills to the next level.",
+        },
+        {
+          href: "/courses/specialty",
+          label: "Specialty Courses",
+          description: "Focus on specific diving interests.",
+        },
+      ],
+    },
+    {
+      href: "/trips",
+      label: "Diving Trips",
+      children: [
+        {
+          href: "/trips/local",
+          label: "Local Sites",
+          description: "Discover the beauty of our nearby waters.",
+        },
+        {
+          href: "/trips/international",
+          label: "International Sites",
+          description: "Join us on an exotic diving expedition.",
+        },
+      ],
+    },
+    {
+      href: "/equipment",
+      label: "Equipment",
+      children: [
+        {
+          href: "/equipment/rentals",
+          label: "Rentals",
+          description: "High-quality gear for your dives."
+        },
+        {
+          href: "/equipment/sales",
+          label: "Sales",
+          description: "Get your own top-tier diving equipment."
+        }
+      ]
+    },
     { href: "/gallery", label: "Gallery" },
-    { href: "/team", label: "Our Team" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
-  ],
+  ] as NavItem[],
   footerNavLinks: [
     {
       title: "Company",
@@ -17,14 +82,15 @@ export const siteConfig = {
         { href: "/team", label: "Our Team" },
         { href: "/gallery", label: "Gallery" },
         { href: "/contact", label: "Contact Us" },
+        { href: "/blog", label: "Blog" },
       ],
     },
     {
       title: "Services",
       links: [
         { href: "/courses", label: "All Courses" },
-        { href: "/courses", label: "Equipment Rental" },
-        { href: "/courses", label: "Guided Tours" },
+        { href: "/trips", label: "Diving Trips" },
+        { href: "/equipment", label: "Equipment" },
         { href: "/booking", label: "Book a Dive" },
       ],
     },
