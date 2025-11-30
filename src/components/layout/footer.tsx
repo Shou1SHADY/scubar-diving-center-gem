@@ -66,7 +66,7 @@ export function Footer() {
               <h3 className="text-lg font-semibold font-headline">{nav.title}</h3>
               <ul className="mt-4 space-y-2">
                 {nav.links.map((link) => (
-                  <li key={link.href}>
+                  <li key={`${nav.title}-${link.href}-${link.label}`}>
                     <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
                       {link.label}
                     </Link>
