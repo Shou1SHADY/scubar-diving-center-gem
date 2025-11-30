@@ -21,6 +21,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
+import ClientHeaderItems from "./client-header-items";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -88,8 +89,10 @@ export function Header() {
                     <NavigationMenuLink asChild>
                       <Link
                         href={link.href}
-                        className={navigationMenuTriggerStyle()}
-                        aria-current={pathname === link.href ? "page" : undefined}
+                        className={cn(
+                          navigationMenuTriggerStyle(),
+                          pathname === link.href ? "bg-accent" : ""
+                        )}
                       >
                         {link.label}
                       </Link>
@@ -114,7 +117,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="pr-0">
-              <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
+              <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
               <Link
                 href="/"
                 className="flex items-center"
@@ -155,7 +158,7 @@ export function Header() {
                         href={link.href}
                         onClick={() => setOpen(false)}
                         className={cn(
-                          "flex items-center py-2 text-base font-medium transition-colors hover:text-foreground",
+                          "flex items-center py-2 text-base font-medium transition-colors hover:text-foreground border-b",
                           pathname === link.href ? "text-foreground font-semibold" : "text-foreground/60"
                         )}
                       >
@@ -175,9 +178,7 @@ export function Header() {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center">
-            <Button asChild variant="ghost" className="hidden sm:inline-flex">
-              <Link href={`tel:${siteConfig.contact.phone.replace(/\\D/g, '')}`}>{siteConfig.contact.phone}</Link>
-            </Button>
+            <ClientHeaderItems />
             <Button asChild>
               <Link href="/booking">Book a Dive</Link>
             </Button>
