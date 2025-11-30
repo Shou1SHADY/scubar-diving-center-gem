@@ -1,11 +1,37 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Logo from "../logo";
+import { useToast } from "@/hooks/use-toast";
 
 export function Footer() {
+  const { toast } = useToast();
+  const [email, setEmail] = useState("");
+
+  const handleNewsletterSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!email) {
+        toast({
+            variant: "destructive",
+            title: "Uh oh!",
+            description: "Please enter your email address.",
+        });
+        return;
+    }
+    console.log("Newsletter subscription for:", email);
+    toast({
+        title: "Subscribed!",
+        description: "Thanks for subscribing to our newsletter.",
+    });
+    setEmail("");
+  };
+
+
   return (
     <footer className="border-t">
       <div className="container py-12">
@@ -55,8 +81,13 @@ export function Footer() {
             <p className="mt-4 text-sm text-muted-foreground">
               Subscribe to our newsletter for the latest updates and offers.
             </p>
-            <form className="mt-4 flex w-full max-w-sm items-center space-x-2">
-              <Input type="email" placeholder="Email" />
+            <form className="mt-4 flex w-full max-w-sm items-center space-x-2" onSubmit={handleNewsletterSubmit}>
+              <Input 
+                type="email" 
+                placeholder="Email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)} 
+              />
               <Button type="submit" variant="default">Subscribe</Button>
             </form>
           </div>
