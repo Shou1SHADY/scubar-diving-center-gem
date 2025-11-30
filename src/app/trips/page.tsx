@@ -5,7 +5,7 @@ export default function TripsPage() {
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Diving Trips
         </h1>
-        <p className="mx-auto max-w-[700px] text-muted-foreground mdT:text-xl">
+        <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
           From local treasures to international wonders, your next diving adventure starts here.
         </p>
       </div>

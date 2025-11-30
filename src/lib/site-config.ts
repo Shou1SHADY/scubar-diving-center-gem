@@ -43,6 +43,11 @@ export const siteConfig = {
       label: "Diving Trips",
       children: [
         {
+          href: "/trips",
+          label: "All Trips",
+          description: "See all our upcoming diving expeditions."
+        },
+        {
           href: "/trips/local",
           label: "Local Sites",
           description: "Discover the beauty of our nearby waters.",
