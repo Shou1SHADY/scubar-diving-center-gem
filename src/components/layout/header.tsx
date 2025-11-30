@@ -84,11 +84,15 @@ export function Header() {
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.href}>
-                     <Link href={link.href} legacyBehavior passHref>
-                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={link.href}
+                        className={navigationMenuTriggerStyle()}
+                        aria-current={pathname === link.href ? "page" : undefined}
+                      >
                         {link.label}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 )
               )}
