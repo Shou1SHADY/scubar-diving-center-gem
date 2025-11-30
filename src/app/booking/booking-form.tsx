@@ -56,14 +56,13 @@ export default function BookingForm() {
 
   return (
     <div className="grid md:grid-cols-2 gap-12 items-start">
-      <Card>
-        <CardContent className="p-2 md:p-6">
+      <Card className="hidden md:block">
+        <CardContent className="p-0">
           <Calendar
             mode="single"
             selected={form.watch('date')}
             onSelect={(date) => form.setValue('date', date as Date)}
-            disabled={(date) => date < new Date() || date < new Date("1900-01-01")}
-            initialFocus
+            disabled={(date) => date < new Date(new Date().setDate(new Date().getDate() - 1))}
             className="w-full"
           />
         </CardContent>
@@ -102,7 +101,7 @@ export default function BookingForm() {
                         selected={field.value}
                         onSelect={field.onChange}
                         disabled={(date) =>
-                          date < new Date() || date < new Date("1900-01-01")
+                           date < new Date(new Date().setDate(new Date().getDate() - 1))
                         }
                         initialFocus
                       />
