@@ -98,13 +98,13 @@ export default function BookingForm() {
   return (
     <>
       <div className="grid md:grid-cols-2 gap-12 items-start">
-        <div>
+        <div className="hidden md:flex justify-center">
           <Calendar
               mode="single"
               selected={form.watch('date')}
               onSelect={(date) => form.setValue('date', date as Date)}
               disabled={(date) => date < new Date(new Date().setDate(new Date().getDate() - 1))}
-              className="rounded-lg border hidden md:block"
+              className="rounded-lg border"
             />
         </div>
         <div className="space-y-8">
