@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 // This data would typically come from a CMS or database
 const blogPosts = [
@@ -49,8 +50,11 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
   return (
     <div className="bg-background">
       <div className="container py-12 md:py-24">
-        <div className="mx-auto max-w-3xl">
-          <div className="space-y-4 mb-8">
+        <div className="mx-auto max-w-4xl">
+           <div 
+              className="space-y-4 mb-8 animate-fade-in-up"
+              style={{ animationDelay: '100ms', animationFillMode: 'forwards', opacity: 0 }}
+            >
              <Button asChild variant="ghost" className="pl-0">
                 <Link href="/blog" className="flex items-center gap-2 text-muted-foreground">
                     <ArrowLeft className="h-4 w-4" />
@@ -65,35 +69,53 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
           </div>
 
           {postImage && (
-            <Image
-              src={postImage.imageUrl}
-              alt={post.title}
-              width={1200}
-              height={675}
-              className="w-full rounded-lg object-cover aspect-video mb-8"
-              data-ai-hint={postImage.imageHint}
-            />
-          )}
-
-          <div 
-            className="prose prose-lg max-w-none text-foreground prose-p:text-foreground/80 prose-headings:text-foreground"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-
-          <div className="mt-12 text-center border-t pt-8">
-            <h3 className="text-2xl font-bold tracking-tighter">Explore More</h3>
-            <p className="mx-auto mt-2 max-w-xl text-muted-foreground">
-              Ready for your own adventure? Check out our courses and book your next dive.
-            </p>
-            <div className="mt-6 flex justify-center gap-4">
-              <Button asChild>
-                <Link href="/courses">View Courses</Link>
-              </Button>
-              <Button asChild variant="secondary">
-                <Link href="/booking">Book a Dive</Link>
-              </Button>
+            <div 
+              className="mb-8 animate-fade-in-up"
+              style={{ animationDelay: '300ms', animationFillMode: 'forwards', opacity: 0 }}
+            >
+              <Image
+                src={postImage.imageUrl}
+                alt={post.title}
+                width={1200}
+                height={675}
+                className="w-full rounded-lg object-cover aspect-video shadow-lg"
+                data-ai-hint={postImage.imageHint}
+              />
             </div>
+          )}
+          
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <article className="lg:col-span-8">
+              <div 
+                className="prose prose-lg max-w-none text-foreground prose-p:text-foreground/80 prose-headings:text-foreground animate-fade-in-up"
+                style={{ animationDelay: '500ms', animationFillMode: 'forwards', opacity: 0 }}
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
+            </article>
+
+            <aside 
+              className="lg:col-span-4 space-y-8 animate-fade-in-up"
+              style={{ animationDelay: '700ms', animationFillMode: 'forwards', opacity: 0 }}
+            >
+                <Card className="bg-card">
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold tracking-tighter mb-4">Explore More</h3>
+                    <p className="text-muted-foreground mb-6">
+                      Ready for your own adventure? Check out our courses and book your next dive.
+                    </p>
+                    <div className="flex flex-col gap-3">
+                      <Button asChild className="w-full">
+                        <Link href="/courses">View Courses</Link>
+                      </Button>
+                      <Button asChild variant="secondary" className="w-full">
+                        <Link href="/booking">Book a Dive</Link>
+                      </Button>
+                    </div>
+                  </div>
+                </Card>
+            </aside>
           </div>
+
         </div>
       </div>
     </div>
