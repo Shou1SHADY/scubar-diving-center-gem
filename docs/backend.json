@@ -1,3 +1,4 @@
+
 {
   "entities": {
     "Course": {
@@ -121,46 +122,43 @@
     "Booking": {
       "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "Booking",
-      "type": "object",
       "description": "Represents a booking made by a customer for a course or tour.",
+      "type": "object",
       "properties": {
-        "id": {
+        "creatorId": {
           "type": "string",
-          "description": "Unique identifier for the Booking entity."
+          "description": "The UID of the user who created the booking."
         },
-        "courseId": {
-          "type": "string",
-          "description": "Reference to Course. (Relationship: Course 1:N Booking)"
-        },
-        "tourId": {
-          "type": "string",
-          "description": "Reference to Tour. (Relationship: Tour 1:N Booking)"
-        },
-        "customerName": {
+        "name": {
           "type": "string",
           "description": "The name of the customer making the booking."
         },
-        "customerEmail": {
+        "email": {
           "type": "string",
           "description": "The email address of the customer.",
           "format": "email"
         },
-        "bookingDate": {
+        "service": {
           "type": "string",
-          "description": "The date and time of the booking.",
+          "description": "The course or service being booked."
+        },
+        "date": {
+          "type": "string",
+          "description": "The requested date for the booking.",
           "format": "date-time"
         },
-        "numberOfParticipants": {
+        "divers": {
           "type": "number",
           "description": "The number of participants in the booking."
         }
       },
       "required": [
-        "id",
-        "customerName",
-        "customerEmail",
-        "bookingDate",
-        "numberOfParticipants"
+        "creatorId",
+        "name",
+        "email",
+        "service",
+        "date",
+        "divers"
       ]
     },
     "GalleryImage": {
@@ -203,7 +201,7 @@
         "definition": {
           "entityName": "Course",
           "schema": {
-            "$ref": "#/backend/entities/Course"
+            "$ref": "#/entities/Course"
           },
           "description": "Stores information about scuba diving courses. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
           "params": [
@@ -219,7 +217,7 @@
         "definition": {
           "entityName": "Tour",
           "schema": {
-            "$ref": "#/backend/entities/Tour"
+            "$ref": "#/entities/Tour"
           },
           "description": "Stores information about guided scuba diving tours. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
           "params": [
@@ -235,7 +233,7 @@
         "definition": {
           "entityName": "Instructor",
           "schema": {
-            "$ref": "#/backend/entities/Instructor"
+            "$ref": "#/entities/Instructor"
           },
           "description": "Stores information about scuba diving instructors. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
           "params": [
@@ -251,7 +249,7 @@
         "definition": {
           "entityName": "Booking",
           "schema": {
-            "$ref": "#/backend/entities/Booking"
+            "$ref": "#/entities/Booking"
           },
           "description": "Stores booking information for courses and tours.",
           "params": [
@@ -267,7 +265,7 @@
         "definition": {
           "entityName": "GalleryImage",
           "schema": {
-            "$ref": "#/backend/entities/GalleryImage"
+            "$ref": "#/entities/GalleryImage"
           },
           "description": "Stores images for the diving center's gallery. Includes denormalized data, if needed, for authorization purposes in subcollections (none in this version).",
           "params": [

@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from '@/lib/site-config';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import { FirebaseClientProvider } from '@/firebase';
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -26,12 +27,14 @@ export default function RootLayout({
       <body className={cn(
         "min-h-screen bg-background font-body antialiased",
       )}>
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
-        <Toaster />
+        <FirebaseClientProvider>
+          <Header />
+          <main>
+            {children}
+          </main>
+          <Footer />
+          <Toaster />
+        </FirebaseClientProvider>
       </body>
     </html>
   );
