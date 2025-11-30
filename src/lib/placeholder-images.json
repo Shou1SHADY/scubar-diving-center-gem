@@ -3,25 +3,25 @@
     {
       "id": "hero-background",
       "description": "An expansive underwater shot of a coral reef teeming with fish.",
-      "imageUrl": "https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1bmRlcndhdGVyJTIwY29yYWx8ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1701673505069-45a4078044ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1bmRlcndhdGVyJTIwY29yYWx8ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "underwater coral"
     },
     {
       "id": "about-mission",
       "description": "A group of divers exploring a vibrant coral reef.",
-      "imageUrl": "https://images.unsplash.com/photo-1714594061876-4b6dae5753f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY3ViYSUyMGRpdmVyc3xlbnwwfHx8fDE3NjQ1MTU5MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618266089457-8cbed84e2e53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY3ViYSUyMGRpdmVyc3xlbnwwfHx8fDE3NjQ1MTU5MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scuba divers"
     },
     {
       "id": "course-open-water",
       "description": "A scuba student learning skills in clear blue water.",
-      "imageUrl": "https://images.unsplash.com/photo-1540351071155-e5d9e8c7cc75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaXZpbmclMjBsZXNzb258ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1644380105162-7c6e5ade4c8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGl2aW5nJTIwbGVzc29ufGVufDB8fHx8MTc2NDUxNTkyMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "diving lesson"
     },
     {
       "id": "course-advanced",
       "description": "A diver exploring a deep shipwreck.",
-      "imageUrl": "https://images.unsplash.com/photo-1561623211-a35ce8d8dd7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaGlwd3JlY2slMjBkaXZpbmd8ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639707184438-d8f82b0ffdb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzaGlwd3JlY2slMjBkaXZpbmd8ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "shipwreck diving"
     },
     {
@@ -33,19 +33,19 @@
     {
       "id": "course-divemaster",
       "description": "A divemaster leading a group of divers.",
-      "imageUrl": "https://images.unsplash.com/photo-1561983779-7d7e065befa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkaXZlJTIwZ3VpZGV8ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666136242406-6de1ec3d3bf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaXZlJTIwZ3VpZGV8ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dive guide"
     },
     {
       "id": "gallery-1",
       "description": "A majestic sea turtle gliding through the ocean.",
-      "imageUrl": "https://images.unsplash.com/photo-1709483095301-2d1f3e95b1d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzZWElMjB0dXJ0bGV8ZW58MHx8fHwxNzY0NTA5Mzg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1572713629470-3e9f5d4fdf4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWElMjB0dXJ0bGV8ZW58MHx8fHwxNzY0NTA5Mzg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sea turtle"
     },
     {
       "id": "gallery-2",
       "description": "A brightly colored clownfish in an anemone.",
-      "imageUrl": "https://images.unsplash.com/photo-1596414086775-3e321ab08f36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjbG93biUyMGZpc2h8ZW58MHx8fHwxNzY0NDE0NzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657989602604-7087c5787ea9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbG93biUyMGZpc2h8ZW58MHx8fHwxNzY0NTQ0MzI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "clown fish"
     },
     {
@@ -63,55 +63,55 @@
     {
       "id": "gallery-5",
       "description": "Vibrant soft corals in various colors.",
-      "imageUrl": "https://images.unsplash.com/photo-1513038918579-a6f01e2d3b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzb2Z0JTIwY29yYWx8ZW58MHx8fHwxNzY0NDE0NzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578403795734-9a754b8bcf5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2Z0JTIwY29yYWx8ZW58MHx8fHwxNzY0NTQ0MzI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "soft coral"
     },
     {
       "id": "gallery-6",
       "description": "A mysterious octopus hiding among rocks.",
-      "imageUrl": "https://images.unsplash.com/photo-1584269660814-d7b1246612f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b2N0b3B1cyUyMGNhbW91ZmxhZ2V8ZW58MHx8fHwxNzY0NTE1OTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629055087058-e2b56b3d4304?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvY3RvcHVzJTIwY2Ftb3VmbGFnZXxlbnwwfHx8fDE3NjQ1MTU5MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "octopus camouflage"
     },
     {
       "id": "gallery-7",
       "description": "A diver's silhouette against the sunlit water surface.",
-      "imageUrl": "https://images.unsplash.com/photo-1743656619909-cf3584e22367?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaXZlciUyMHNpbGhvdWV0dGV8ZW58MHx8fHwxNzY0NTE1OTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1642840092853-a5aa6180cc0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkaXZlciUyMHNpbGhvdWV0dGV8ZW58MHx8fHwxNzY0NTE1OTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "diver silhouette"
     },
     {
       "id": "gallery-8",
       "description": "A manta ray soaring through the deep blue.",
-      "imageUrl": "https://images.unsplash.com/photo-1730483949618-a5149a68137f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW50YSUyMHJheXxlbnwwfHx8fDE3NjQ1MTU5MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573350926865-cf0d512fd504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW50YSUyMHJheXxlbnwwfHx8fDE3NjQ1MTU5MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "manta ray"
     },
     {
       "id": "team-1",
       "description": "Portrait of a smiling female dive instructor.",
-      "imageUrl": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NDQ3MTgwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NDQ3MTgwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "team-2",
       "description": "Portrait of a male dive instructor with a beard.",
-      "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ0ODAyODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ0ODAyODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "team-3",
       "description": "Portrait of a friendly looking dive master.",
-      "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDQ2NDU5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554727242-741c14fa561c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDQ2NDU5OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person smiling"
     },
     {
       "id": "team-4",
       "description": "Portrait of a seasoned male captain of a dive boat.",
-      "imageUrl": "https://images.unsplash.com/photo-1679086952029-1ef04377ea49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXB0YWluJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0NDU2NDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625457672617-149610c62a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXB0YWluJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0NDU2NDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "captain portrait"
     },
     {
       "id": "map-placeholder",
       "description": "A stylized map showing a coastal area with a marker.",
-      "imageUrl": "https://images.unsplash.com/photo-1687552627668-6b9fa2edb60e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXAlMjBsb2NhdGlvbnxlbnwwfHx8fDE3NjQ0ODkyODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1619468129361-605ebea04b44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBsb2NhdGlvbnxlbnwwfHx8fDE3NjQ0ODkyODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "map location"
     },
     {
@@ -123,49 +123,49 @@
     {
       "id": "equipment-regulator",
       "description": "Close-up of a scuba regulator set.",
-      "imageUrl": "https://images.unsplash.com/photo-1588877981142-0851cb22ad89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY3ViYSUyMHJlZ3VsYXRvcnxlbnwwfHx8fDE3NjQ1MTc5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1665192618949-a91f4cf0ec12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzY3ViYSUyMHJlZ3VsYXRvcnxlbnwwfHx8fDE3NjQ1MTc5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scuba regulator"
     },
     {
       "id": "equipment-wetsuit",
       "description": "A collection of wetsuits hanging to dry.",
-      "imageUrl": "https://images.unsplash.com/photo-1758968515050-70848bb06aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY3ViYSUyMHdldHN1aXR8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605476390426-74ba5e8c1011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY3ViYSUyMHdldHN1aXR8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scuba wetsuit"
     },
     {
       "id": "equipment-computer",
       "description": "A diver checking their wrist-mounted dive computer.",
-      "imageUrl": "https://images.unsplash.com/photo-1502209524164-acea936639a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaXZlJTIwY29tcHV0ZXJ8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1441260038675-7329ab4cc264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaXZlJTIwY29tcHV0ZXJ8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dive computer"
     },
     {
       "id": "equipment-mask",
       "description": "A modern scuba mask and snorkel.",
-      "imageUrl": "https://images.unsplash.com/photo-1699740549075-0a25d76823ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY3ViYSUyMG1hc2t8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590293388237-be501287830a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2N1YmElMjBtYXNrfGVufDB8fHx8MTc2NDUxNzk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scuba mask"
     },
     {
       "id": "equipment-light",
       "description": "A powerful underwater dive light illuminating a coral.",
-      "imageUrl": "https://images.unsplash.com/photo-1738103042405-f151957eea3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkaXZlJTIwbGlnaHR8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1592162626225-3eab4117f248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaXZlJTIwbGlnaHR8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dive light"
     },
     {
       "id": "blog-ocean-conservation",
       "description": "A pristine coral reef with a diver in the background, symbolizing conservation.",
-      "imageUrl": "https://images.unsplash.com/photo-1574348619623-753a8141d42a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3JhbCUyMHJlZWYlMjBjb25zZXJ2YXRpb258ZW58MHx8fHwxNzY0NTIyNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631255117608-53d66533090e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3JhbCUyMGNvbnNlcnZhdGlvbnxlbnwwfHx8fDE3NjQ1NDQzMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coral conservation"
     },
     {
       "id": "blog-buoyancy-tips",
       "description": "A diver hovering effortlessly mid-water, demonstrating perfect buoyancy control.",
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-745d8b7a2d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY3ViYSUyMGJ1b3lhbmN5fGVufDB8fHx8MTc2NDUyMjU2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1645516580925-ea6ef0a1b2a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY3ViYSUyMGJ1b3lhbmN5fGVufDB8fHx8MTc2NDU0NDMyNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scuba buoyancy"
     },
     {
       "id": "blog-uw-photography",
       "description": "A diver taking a close-up photo of a small fish.",
-      "imageUrl": "https://images.unsplash.com/photo-1605553229712-4c2bb23c773a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bmRlcndhdGVyJTIwcGhvdG9ncmFwaGVyfGVufDB8fHx8MTc2NDUyMjU2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1577457674621-d48c056f0505?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1bmRlcndhdGVyJTIwcGhvdG9ncmFwaGVyfGVufDB8fHx8MTc2NDU0NDMyNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "underwater photographer"
     }
   ]
