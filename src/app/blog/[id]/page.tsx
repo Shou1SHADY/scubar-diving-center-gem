@@ -103,11 +103,11 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                     <p className="text-muted-foreground mb-6">
                       Ready for your own adventure? Check out our courses and book your next dive.
                     </p>
-                    <div className="flex flex-col gap-3">
-                      <Button asChild className="w-full">
+                    <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
+                      <Button asChild>
                         <Link href="/courses">View Courses</Link>
                       </Button>
-                      <Button asChild variant="secondary" className="w-full">
+                      <Button asChild variant="secondary">
                         <Link href="/booking">Book a Dive</Link>
                       </Button>
                     </div>
