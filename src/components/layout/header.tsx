@@ -17,6 +17,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
@@ -83,11 +84,12 @@ export function Header() {
                 ) : (
                   <NavigationMenuItem key={link.href}>
                     <Link href={link.href} legacyBehavior passHref>
-                      <NavigationMenuLink className={cn(
-                          "transition-colors hover:text-foreground/80",
-                          pathname === link.href ? "text-foreground" : "text-foreground/60",
-                          "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium"
-                      )}>
+                      <NavigationMenuLink className={navigationMenuTriggerStyle({
+                          className: cn(
+                            "transition-colors hover:text-foreground/80",
+                            pathname === link.href ? "text-foreground" : "text-foreground/60"
+                          )
+                      })}>
                         {link.label}
                       </NavigationMenuLink>
                     </Link>
