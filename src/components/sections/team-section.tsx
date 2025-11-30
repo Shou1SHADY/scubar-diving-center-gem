@@ -24,7 +24,7 @@ export default function TeamSection({ isHomePage = false }: TeamSectionProps) {
                         Passionate, experienced, and dedicated to making your dive unforgettable.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {membersToDisplay.map((member, index) => {
                         const memberImage = PlaceHolderImages.find(img => img.id === member.image);
                         return (

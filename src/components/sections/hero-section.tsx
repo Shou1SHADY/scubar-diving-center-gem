@@ -8,7 +8,7 @@ export default function HeroSection() {
     const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
 
     return (
-        <section className="relative h-[calc(100vh-4rem)] w-full">
+        <section className="relative h-[80vh] sm:h-[calc(100vh-4rem)] w-full">
             {heroImage && (
                 <Image
                     src={heroImage.imageUrl}
@@ -20,7 +20,7 @@ export default function HeroSection() {
                 />
             )}
             <div className="absolute inset-0 bg-black/50" />
-            <div className="container relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+            <div className="container relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl">
                     <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl font-headline text-white">
                         Discover the World Beneath
@@ -28,7 +28,7 @@ export default function HeroSection() {
                     <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200">
                         Your ultimate adventure starts here. Explore vibrant coral reefs, mysterious shipwrecks, and the incredible biodiversity of the ocean.
                     </p>
-                    <div className="mt-8 flex justify-center gap-4">
+                    <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                         <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                             <Link href="/booking">Book a Dive</Link>
                         </Button>

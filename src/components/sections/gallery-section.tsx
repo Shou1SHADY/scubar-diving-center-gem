@@ -27,7 +27,7 @@ export default function GallerySection({ isHomePage = false }: GallerySectionPro
             </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
           {imagesToDisplay.map((image, index) => (
             <Dialog key={image.id}>
               <DialogTrigger asChild>
@@ -52,8 +52,7 @@ export default function GallerySection({ isHomePage = false }: GallerySectionPro
                   alt={image.description}
                   width={1200}
                   height={1200}
-                  className="rounded-lg object-contain"
-                  data-ai-hint={image.imageHint}
+                  className="rounded-lg object-contain w-full"
                 />
               </DialogContent>
             </Dialog>

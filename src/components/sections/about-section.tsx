@@ -73,8 +73,7 @@ export default function AboutSection({ isHomePage = false }: AboutSectionProps) 
                 alt={aboutImage.description}
                 width={600}
                 height={400}
-                className="rounded-lg object-cover shadow-lg"
-                data-ai-hint={aboutImage.imageHint}
+                className="rounded-lg object-cover shadow-lg w-full"
               />
             )}
           </div>
