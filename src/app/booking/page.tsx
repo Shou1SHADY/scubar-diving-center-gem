@@ -1,4 +1,6 @@
+
 import BookingForm from "./booking-form";
+import { Card } from "@/components/ui/card";
 
 export default function BookingPage() {
   return (
@@ -11,7 +13,9 @@ export default function BookingPage() {
                 Select a date, choose your course, and get ready for an unforgettable adventure.
             </p>
         </div>
-        <BookingForm />
+        <Card className="p-6 md:p-8 lg:p-12">
+            <BookingForm />
+        </Card>
     </div>
   );
 }
