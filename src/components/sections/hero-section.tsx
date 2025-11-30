@@ -8,7 +8,7 @@ export default function HeroSection() {
     const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
 
     return (
-        <section className="relative h-[80vh] w-full">
+        <section className="relative h-[calc(100vh-4rem)] w-full">
             {heroImage && (
                 <Image
                     src={heroImage.imageUrl}
@@ -21,7 +21,7 @@ export default function HeroSection() {
             )}
             <div className="absolute inset-0 bg-black/50" />
             <div className="container relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                <div className="max-w-3xl animate-fade-in-up">
+                <div className="max-w-3xl">
                     <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl font-headline text-white">
                         Discover the World Beneath
                     </h1>

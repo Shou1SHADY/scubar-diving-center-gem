@@ -30,7 +30,7 @@ export default function GallerySection({ isHomePage = false }: GallerySectionPro
           {imagesToDisplay.map((image, index) => (
             <Dialog key={image.id}>
               <DialogTrigger asChild>
-                <div className="group relative overflow-hidden rounded-lg cursor-pointer animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                <div className="group relative overflow-hidden rounded-lg cursor-pointer" style={{ animationDelay: `${index * 100}ms` }}>
                   <Image
                     src={image.imageUrl}
                     alt={image.description}

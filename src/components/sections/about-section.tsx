@@ -62,7 +62,7 @@ export default function AboutSection({ isHomePage = false }: AboutSectionProps) 
               </Button>
             )}
           </div>
-          <div className="animate-fade-in">
+          <div>
             {aboutImage && (
               <Image
                 src={aboutImage.imageUrl}

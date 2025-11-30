@@ -27,7 +27,7 @@ export default function RootLayout({
         "min-h-screen bg-background font-body antialiased",
       )}>
         <Header />
-        <main className="flex-1">
+        <main>
           {children}
         </main>
         <Footer />
