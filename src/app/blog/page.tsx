@@ -74,7 +74,7 @@ export default function BlogPage() {
               </CardContent>
               <CardFooter className="p-6 pt-0">
                  <Button asChild className="w-full">
-                  <Link href="#">Read More</Link>
+                  <Link href={`/blog/${post.id}`}>Read More</Link>
                 </Button>
               </CardFooter>
             </Card>
