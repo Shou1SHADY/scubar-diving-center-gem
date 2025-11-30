@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -175,7 +176,7 @@ export function Header() {
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center">
             <Button asChild variant="ghost" className="hidden sm:inline-flex">
-              <Link href="/contact">{siteConfig.contact.phone}</Link>
+              <Link href={`tel:${siteConfig.contact.phone.replace(/\\D/g, '')}`}>{siteConfig.contact.phone}</Link>
             </Button>
             <Button asChild>
               <Link href="/booking">Book a Dive</Link>
