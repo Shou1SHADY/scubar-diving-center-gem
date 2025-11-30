@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -85,7 +84,7 @@ export function Header() {
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.href}>
-                    <Link href={link.href} passHref asChild>
+                    <Link href={link.href} legacyBehavior passHref>
                       <NavigationMenuLink active={pathname === link.href} className={navigationMenuTriggerStyle()}>
                         {link.label}
                       </NavigationMenuLink>
