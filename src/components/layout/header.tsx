@@ -22,8 +22,8 @@ import {
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
 const ListItem = React.forwardRef<
-  React.ElementRef<typeof Link>,
-  React.ComponentPropsWithoutRef<typeof Link>
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
@@ -84,14 +84,10 @@ export function Header() {
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.href}>
-                    <Link href={link.href} passHref>
+                    <Link href={link.href} legacyBehavior passHref>
                       <NavigationMenuLink
-                        className={navigationMenuTriggerStyle({
-                          className: cn(
-                            "transition-colors hover:text-foreground/80",
-                            pathname === link.href ? "text-foreground" : "text-foreground/60"
-                          )
-                        })}
+                        className={navigationMenuTriggerStyle()}
+                        active={pathname === link.href}
                       >
                         {link.label}
                       </NavigationMenuLink>
