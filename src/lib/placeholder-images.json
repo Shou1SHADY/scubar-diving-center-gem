@@ -149,6 +149,24 @@
       "description": "A powerful underwater dive light illuminating a coral.",
       "imageUrl": "https://images.unsplash.com/photo-1738103042405-f151957eea3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkaXZlJTIwbGlnaHR8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dive light"
+    },
+    {
+      "id": "blog-ocean-conservation",
+      "description": "A pristine coral reef with a diver in the background, symbolizing conservation.",
+      "imageUrl": "https://images.unsplash.com/photo-1574348619623-753a8141d42a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3JhbCUyMHJlZWYlMjBjb25zZXJ2YXRpb258ZW58MHx8fHwxNzY0NTIyNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coral conservation"
+    },
+    {
+      "id": "blog-buoyancy-tips",
+      "description": "A diver hovering effortlessly mid-water, demonstrating perfect buoyancy control.",
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-745d8b7a2d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY3ViYSUyMGJ1b3lhbmN5fGVufDB8fHx8MTc2NDUyMjU2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scuba buoyancy"
+    },
+    {
+      "id": "blog-uw-photography",
+      "description": "A diver taking a close-up photo of a small fish.",
+      "imageUrl": "https://images.unsplash.com/photo-1605553229712-4c2bb23c773a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bmRlcndhdGVyJTIwcGhvdG9ncmFwaGVyfGVufDB8fHx8MTc2NDUyMjU2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "underwater photographer"
     }
   ]
 }
