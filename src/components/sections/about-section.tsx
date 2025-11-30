@@ -35,7 +35,7 @@ export default function AboutSection({ isHomePage = false }: AboutSectionProps) 
       <div className="container">
         <div className="grid gap-8 md:grid-cols-2 md:gap-16 items-center">
           <div className="space-y-6">
-            <div className="space-y-3">
+            <div className="space-y-3 animate-fade-in-up" style={{ animationDelay: '100ms', animationFillMode: 'forwards', opacity: 0 }}>
                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Your Trusted Partner in Underwater Exploration
               </h2>
@@ -46,7 +46,11 @@ export default function AboutSection({ isHomePage = false }: AboutSectionProps) 
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {features.slice(0, isHomePage ? 2 : 3).map((feature, index) => (
-                <div key={index} className="flex items-start space-x-4">
+                <div 
+                  key={index} 
+                  className="flex items-start space-x-4 animate-fade-in-up" 
+                  style={{ animationDelay: `${200 + index * 150}ms`, animationFillMode: 'forwards', opacity: 0 }}
+                >
                   <div>{feature.icon}</div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-bold">{feature.title}</h3>
@@ -57,12 +61,12 @@ export default function AboutSection({ isHomePage = false }: AboutSectionProps) 
             </div>
 
             {isHomePage && (
-              <Button asChild className="mt-4">
+              <Button asChild className="mt-4 animate-fade-in-up" style={{ animationDelay: '500ms', animationFillMode: 'forwards', opacity: 0 }}>
                 <Link href="/about">Learn More About Us</Link>
               </Button>
             )}
           </div>
-          <div>
+          <div className="animate-fade-in" style={{ animationDelay: '300ms', animationFillMode: 'forwards', opacity: 0 }}>
             {aboutImage && (
               <Image
                 src={aboutImage.imageUrl}
@@ -76,7 +80,7 @@ export default function AboutSection({ isHomePage = false }: AboutSectionProps) 
           </div>
         </div>
         {!isHomePage && (
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-center animate-fade-in-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards', opacity: 0 }}>
             <h3 className="text-2xl font-bold tracking-tighter sm:text-3xl">Our Story</h3>
             <p className="mx-auto mt-4 max-w-3xl text-muted-foreground">
               Founded in 2005 by a group of passionate marine biologists and dive enthusiasts, Neptune Dive started as a small operation with a big dream: to create a community centered around the love for the ocean. Over the years, we've grown into a leading dive center, but our core values remain the same. We're dedicated to conservation, education, and creating unforgettable memories for every diver who joins us.

@@ -29,7 +29,7 @@ export default function CoursesSection({ isHomePage = false }: CoursesSectionPro
                     {coursesToDisplay.map((course) => {
                         const courseImage = PlaceHolderImages.find(img => img.id === course.image);
                         return (
-                            <Card key={course.id} className="flex flex-col overflow-hidden">
+                            <Card key={course.id} className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
                                 <CardHeader className="p-0">
                                     {courseImage && (
                                         <Image

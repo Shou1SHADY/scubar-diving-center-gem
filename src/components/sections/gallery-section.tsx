@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '../ui/button';
+import { cn } from '@/lib/utils';
 
 interface GallerySectionProps {
     isHomePage?: boolean;
@@ -30,7 +31,10 @@ export default function GallerySection({ isHomePage = false }: GallerySectionPro
           {imagesToDisplay.map((image, index) => (
             <Dialog key={image.id}>
               <DialogTrigger asChild>
-                <div className="group relative overflow-hidden rounded-lg cursor-pointer" style={{ animationDelay: `${index * 100}ms` }}>
+                <div 
+                  className="group relative overflow-hidden rounded-lg cursor-pointer animate-fade-in-up"
+                  style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'forwards', opacity: 0 }}
+                >
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
