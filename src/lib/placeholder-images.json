@@ -113,6 +113,42 @@
       "description": "A stylized map showing a coastal area with a marker.",
       "imageUrl": "https://images.unsplash.com/photo-1687552627668-6b9fa2edb60e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXAlMjBsb2NhdGlvbnxlbnwwfHx8fDE3NjQ0ODkyODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "map location"
+    },
+    {
+      "id": "equipment-bcd",
+      "description": "A scuba diver adjusting their BCD underwater.",
+      "imageUrl": "https://images.unsplash.com/photo-1671129078614-fc84113280a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY3ViYSUyMEJDRHxlbnwwfHx8fDE3NjQ1MTc5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scuba BCD"
+    },
+    {
+      "id": "equipment-regulator",
+      "description": "Close-up of a scuba regulator set.",
+      "imageUrl": "https://images.unsplash.com/photo-1588877981142-0851cb22ad89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY3ViYSUyMHJlZ3VsYXRvcnxlbnwwfHx8fDE3NjQ1MTc5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scuba regulator"
+    },
+    {
+      "id": "equipment-wetsuit",
+      "description": "A collection of wetsuits hanging to dry.",
+      "imageUrl": "https://images.unsplash.com/photo-1758968515050-70848bb06aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY3ViYSUyMHdldHN1aXR8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scuba wetsuit"
+    },
+    {
+      "id": "equipment-computer",
+      "description": "A diver checking their wrist-mounted dive computer.",
+      "imageUrl": "https://images.unsplash.com/photo-1502209524164-acea936639a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaXZlJTIwY29tcHV0ZXJ8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dive computer"
+    },
+    {
+      "id": "equipment-mask",
+      "description": "A modern scuba mask and snorkel.",
+      "imageUrl": "https://images.unsplash.com/photo-1699740549075-0a25d76823ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY3ViYSUyMG1hc2t8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scuba mask"
+    },
+    {
+      "id": "equipment-light",
+      "description": "A powerful underwater dive light illuminating a coral.",
+      "imageUrl": "https://images.unsplash.com/photo-1738103042405-f151957eea3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkaXZlJTIwbGlnaHR8ZW58MHx8fHwxNzY0NTE3OTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dive light"
     }
   ]
 }

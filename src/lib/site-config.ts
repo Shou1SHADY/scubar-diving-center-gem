@@ -1,3 +1,4 @@
+
 export type NavItem = {
   label: string;
   href: string;
@@ -172,4 +173,84 @@ export const teamMembers = [
         bio: "Our seasoned captain has more stories than the sea has fish. He ensures a safe and smooth journey to all our dive sites, with a healthy dose of humor.",
         image: "team-4"
     }
-]
+];
+
+export const trips = [
+  {
+    id: "blue-hole",
+    title: "The Great Blue Hole, Belize",
+    description: "A giant marine sinkhole offering a unique dive into crystal-clear waters and mysterious stalactites.",
+    type: "international",
+    image: "gallery-3"
+  },
+  {
+    id: "local-kelp",
+    title: "Monterey Bay Kelp Forests",
+    description: "Explore the enchanting underwater forests of Monterey Bay, home to otters, seals, and vibrant marine life.",
+    type: "local",
+    image: "gallery-1"
+  },
+  {
+    id: "red-sea",
+    title: "Red Sea Reefs, Egypt",
+    description: "Discover the world-renowned coral reefs of the Red Sea, bustling with colorful fish and historic wrecks.",
+    type: "international",
+    image: "gallery-2"
+  },
+  {
+    id: "puget-sound",
+    title: "Puget Sound, Washington",
+    description: "Dive into the cool, nutrient-rich waters of Puget Sound to see giant Pacific octopuses and wolf eels.",
+    type: "local",
+    image: "gallery-6"
+  }
+];
+
+export const equipment = {
+  rentals: [
+    {
+      id: "bcd",
+      name: "Buoyancy Control Device (BCD)",
+      description: "Top-of-the-line BCDs for perfect buoyancy control.",
+      price: "$20/day",
+      image: "equipment-bcd"
+    },
+    {
+      id: "regulator",
+      name: "Regulator Set",
+      description: "High-performance regulators for easy breathing at any depth.",
+      price: "$25/day",
+      image: "equipment-regulator"
+    },
+    {
+      id: "wetsuit",
+      name: "Wetsuit (7mm)",
+      description: "Stay warm in our comfortable and flexible 7mm wetsuits.",
+      price: "$15/day",
+      image: "equipment-wetsuit"
+    },
+  ],
+  sales: [
+     {
+      id: "dive-computer",
+      name: "Dive Computer",
+      description: "Advanced dive computers from leading brands to track your dives.",
+      price: "Starting at $299",
+      image: "equipment-computer"
+    },
+    {
+      id: "mask-fins",
+      name: "Mask & Fins Set",
+      description: "High-quality silicone masks and powerful fins for the best experience.",
+      price: "Starting at $149",
+      image: "equipment-mask"
+    },
+     {
+      id: "dive-light",
+      name: "Primary Dive Light",
+      description: "Illuminate the depths with our powerful and reliable dive lights.",
+      price: "Starting at $199",
+      image: "equipment-light"
+    },
+  ]
+};
